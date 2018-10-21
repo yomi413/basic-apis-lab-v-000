@@ -8,7 +8,7 @@ class RepositoriesController < ApplicationController
     @resp = Faraday.get 'https://api.github.com/search/repositories?q=tetris' do |req|
       req.params['client_id'] = 'Iv1.d9e81900426c84b8'
       req.params['client_secret'] = '970c0689f49e82b07757e88aabc1cc274a108d35'
-      req.params['q'] = 'tetris'
+      # req.params['q'] = 'tetris'
     end
 
     body = JSON.parse(@resp.body)
