@@ -10,9 +10,9 @@
     <ul>
       <% @items.each do |item| %>
         <li>
-          Name: <%= item['name'] %><br>
-          Link: <a href="<%= item['html_url'] %>"><%= item['html_url'] %></a><br>
-          Description: <%= item['description'] %>
+          <strong>Name:</strong> <%= item['name'] %><br>
+          <strong>Link:</strong> <a href="<%= item['html_url'] %>"><%= item['html_url'] %></a><br>
+          <strong>Description:</strong> <%= item['description'] %>
         </li>
       <% end %>
     </ul>
