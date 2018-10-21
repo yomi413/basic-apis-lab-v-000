@@ -6,5 +6,15 @@
 <% end %>
 
 <div>
-  <%= @items %>
+  <% if @items %>
+    <ul>
+      <% @items.each do |item| %>
+        <li>
+          <%= item['name'] %><br>
+          <%= item['html_url'] %><br>
+          <%= item['description'] %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
 </div>
