@@ -10,7 +10,7 @@
     <ul>
     <% @items.each do |item| %>
       <li>
-        <%= item["owner"]["login"] %>
+        <%= binding.pry %>
         <%= item["html_url"] %>
       </li>
     <% end %>
