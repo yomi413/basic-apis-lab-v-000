@@ -6,11 +6,5 @@
 <% end %>
 
 <div>
-  <% if @venues %>
-    <ul>
-    <%= @items.each do |item| %>
-      <li>
-        <%= item["name"] %><br>
-    <% end %>
-  <% end %>
+  <%= @items %>
 </div>
