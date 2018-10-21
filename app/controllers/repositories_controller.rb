@@ -11,8 +11,8 @@ class RepositoriesController < ApplicationController
       req.params['q'] = 'tetris'
     end
 
-    # body = JSON.parse(@resp.body)
-    # @items = body["items"]
+    body = JSON.parse(@resp.body)
+    @items = body["items"]
     render 'search'
   end
 end
