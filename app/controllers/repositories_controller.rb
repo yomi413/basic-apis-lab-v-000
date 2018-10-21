@@ -13,6 +13,6 @@ class RepositoriesController < ApplicationController
 
     # body = JSON.parse(@resp.body)
     # @items = body["items"]
-    render 'search'
+    # render 'search'
   end
 end
